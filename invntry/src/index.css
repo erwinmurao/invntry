@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  /* Adding a custom small mobile breakpoint */
+  --breakpoint-xs: 400px;
+
+  /* Adding an ultra-wide desktop breakpoint */
+  --breakpoint-3xl: 1920px;
+
+  /* You can also name them whatever you want */
+  --breakpoint-tablet: 900px;
+}
