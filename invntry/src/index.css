@@ -10,3 +10,8 @@
   /* You can also name them whatever you want */
   --breakpoint-tablet: 900px;
 }
+
+*{
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
