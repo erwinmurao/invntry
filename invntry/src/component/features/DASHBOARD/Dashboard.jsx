@@ -1,13 +1,16 @@
 import React from "react";
 import Logo from "../../../assets/hero.png";
 import Sidebar from "../SIDEBAR/Sidebar";
+import SecondarySidebar from "../SIDEBAR/SecondarySidebar";
 
 const Dashboard = () => {
   return (
-    <div className="dashboard">
-      <div className="menu flex justify-between items-center p-4 bg-gray-800 text-white">
+    // 1. h-screen and overflow-hidden locks the viewport so the whole page doesn't scroll
+    <div className="dashboard h-screen flex flex-col overflow-hidden">
+      {/* FIXED TOP MENU */}
+      <div className="menu flex justify-between items-center p-4 bg-gray-800 text-white shrink-0">
         <div className="flex space-x-20 ml-4 p-2">
-          <div className="space-x-2  flex items-center">
+          <div className="space-x-2 flex items-center">
             <img src={Logo} alt="Logo" className="h-10 w-10" />
           </div>
 
@@ -33,33 +36,18 @@ const Dashboard = () => {
               placeholder="Search..."
               className="w-full bg-transparent focus:outline-none text-white"
             />
-            <div className="ml-2 cursor-pointer">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="size-5 h-5 text-gray-400"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-                />
-              </svg>
-            </div>
           </div>
         </div>
+
         <div className="flex space-x-10">
-          <div>
+          <div className="cursor-pointer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              strokeWidth={1}
+              strokeWidth={1.5}
               stroke="currentColor"
-              className="size-8"
+              className="size-6"
             >
               <path
                 strokeLinecap="round"
@@ -68,14 +56,14 @@ const Dashboard = () => {
               />
             </svg>
           </div>
-          <div className="mr-10">
+          <div className="mr-10 cursor-pointer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              strokeWidth={1}
+              strokeWidth={1.5}
               stroke="currentColor"
-              className="size-8"
+              className="size-6"
             >
               <path
                 strokeLinecap="round"
@@ -87,15 +75,19 @@ const Dashboard = () => {
         </div>
       </div>
 
-      {/* Container of left-container, and right-container      */}
-      <div className="flex flex-row justify-evenly h-full w-full overflow-hidden ">
-        <div className="left-container w-full md:w-[15%]  bg-gray-100">
-         {/**SIDEBAR */}
+      {/* LOWER SECTION */}
+      <div className="flex flex-row flex-1 overflow-hidden">
+        {/* FIXED LEFT SIDEBAR */}
+        <div className="left-container w-[12%] bg-gray-100 border-r shrink-0">
           <Sidebar />
         </div>
 
-        <div className="right-container w-full md:w-[85%] bg-white p-6">
-          <div></div>
+        {/* SCROLLABLE RIGHT CONTENT */}
+        <div className="right-container flex-1 bg-white overflow-y-auto">
+          {/* This inner div is where your Inventory Management title, cards, and table live */}
+          <div className="p-6">
+            <SecondarySidebar />
+          </div>
         </div>
       </div>
     </div>

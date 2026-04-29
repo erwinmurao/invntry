@@ -1,5 +1,5 @@
 import React from 'react'
-import LandingPage from  './component/features/SIDEBAR/SecondarySidebar'
+import LandingPage from  './component/features/DASHBOARD/Dashboard'
 const App = () => {
   return (
     <div>

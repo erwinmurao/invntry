@@ -8,7 +8,7 @@ const Sidebar = () => {
   return (
     <div className="flex h-full w-full bg-white">
       {/* Sidebar Container */}
-      <div className="border-r border-gray-200 w-64 flex flex-col justify-between p-6">
+      <div className="border-r border-gray-200 w-72 flex flex-col justify-between p-6">
         {/* Top Section: Navigation */}
         <div className="flex flex-col gap-2 ">
           <div className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4 px-3">
@@ -77,6 +77,11 @@ const Sidebar = () => {
             </svg>
             <span className="font-medium">Setting</span>
           </div>
+
+          
+
+
+
 
           <div
             className={`${menuItemStyle} text-red-500 hover:bg-red-50 hover:text-red-600`}
