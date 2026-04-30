@@ -36,11 +36,11 @@ const SecondarySidebar = () => {
           <span>Item Sold</span>
           <span>TOTAL PRODUCT</span>
         </div>
-        <div className="flex flex-col border-2 border-gray-200 bg-gray-100   p-4 rounded-sm w-70">
+        <div className="flex flex-col border-2 border-gray-200 bg-gray-100 p-4 rounded-sm w-70">
           <span>Low Stock Items</span>
           <span>ITEM COUNT</span>
         </div>
-        <div className="flex flex-col border-2 border-gray-200 bg-gray-100   p-4 rounded-sm w-70">
+        <div className="flex flex-col border-2 border-gray-200 bg-gray-100 p-4 rounded-sm w-70">
           <span>Pending Orders</span>
           <span>Pending Orders</span>
         </div>

@@ -9,13 +9,13 @@ const Dashboard = () => {
     <div className="dashboard h-screen flex flex-col overflow-hidden">
       {/* FIXED TOP MENU */}
       <div className="menu flex justify-between items-center p-4 bg-gray-800 text-white shrink-0">
-        <div className="flex space-x-20 ml-4 p-2">
-          <div className="space-x-2 flex items-center">
+        <div className="flex space-x-20 ml-4 p-2 ">
+          <div className="space-x-2  flex items-center">
             <img src={Logo} alt="Logo" className="h-10 w-10" />
           </div>
 
-          <div className="flex items-center border w-100 2px p-2">
-            <div className="mr-2">
+          <div className="flex items-center  border w-100 2px p-2">
+            <div className="mr-2 ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -76,9 +76,9 @@ const Dashboard = () => {
       </div>
 
       {/* LOWER SECTION */}
-      <div className="flex flex-row flex-1 overflow-hidden">
+      <div className="flex flex-row flex-1   overflow-hidden">
         {/* FIXED LEFT SIDEBAR */}
-        <div className="left-container w-[12%] bg-gray-100 border-r shrink-0">
+        <div className="left-container w-[12%] bg-gray-800  shrink-0">
           <Sidebar />
         </div>
 

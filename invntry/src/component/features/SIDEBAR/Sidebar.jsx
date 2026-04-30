@@ -6,12 +6,12 @@ const Sidebar = () => {
     "flex items-center gap-4 p-3 rounded-lg hover:bg-gray-100 cursor-pointer transition-all duration-200 text-gray-700 hover:text-black";
 
   return (
-    <div className="flex h-full w-full bg-white">
-      {/* Sidebar Container */}
-      <div className="border-r border-gray-200 w-72 flex flex-col justify-between p-6">
+    <div className="flex h-full w-full  bg-white">
+      {/* Sidebar Container ! */}
+      <div className="border-r w-full border-gray-200 flex flex-col justify-between p-6">
         {/* Top Section: Navigation */}
-        <div className="flex flex-col gap-2 ">
-          <div className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4 px-3">
+        <div className="flex flex-col  gap-2 ">
+          <div className="text-xs font-semibold text-gray-800 uppercase tracking-wider mb-4 px-3">
             Menu
           </div>
 
@@ -54,7 +54,7 @@ const Sidebar = () => {
         </div>
 
         {/* Bottom Section: Settings & Logout */}
-        <div className="flex flex-col gap-2 border-t border-gray-200 pt-4">
+        <div className="flex flex-col gap-2  border-t border-gray-200 pt-4">
           <div className={menuItemStyle}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
