@@ -1,5 +1,5 @@
 import React from 'react'
-import LandingPage from  './component/features/DASHBOARD/Dashboard'
+import LandingPage from  './component/login/Login'
 const App = () => {
   return (
     <div>
